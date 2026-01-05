@@ -52,7 +52,6 @@ jobs:
         uses: actions/configure-pages@v4
         with:
           staic_site_generator: next
-        run: |
       - run: npm install
       - run: npm test
       - name: upload artifacts
@@ -62,4 +61,3 @@ jobs:
       - name: deploy 
         id: deployment
         uses: actions/deploy-pages@v4
-        
